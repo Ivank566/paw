@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./fonts";
+@import "./header";
+@import "./banner";
+@import "./offer";
+@import "./products";
+@import "./reviews";
+@import "./about";
+@import "./subscribe";
+@import "./footer";
+@import "./media-breakpoints";
+
+
+
+
+$cat-color: #F9B105;
+$dog-color: #BE6E53;
+
+html, body{
+    
+    height: 100%;
+}
+
+html {
+    font-size: calc(1vw / 19.2);
+
+    @include tablet{
+        font-size: calc(1vw / 7.68);
+    }
+
+    @include mobile{
+        font-size: calc(1vw / 3.85);
+}
+}
+
+
+
+
+
+
+
+body {
+    margin: 0px;
+}
+
+.wrapper {
+    position: relative;
+    top: 0rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Montserrat Alternates;
+}
+
+
+
+
+
+
+
+

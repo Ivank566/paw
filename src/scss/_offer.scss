@@ -1,0 +1,219 @@
+@use "./media-breakpoints" as m;
+
+.offer {
+    width: 100%;
+    height: 482rem;
+    flex-shrink: 0;
+
+    @include m.tablet {
+        height: 274rem;
+    }
+
+    @include m.mobile {
+        height: 325rem;
+    }
+
+    &__wrapper {
+        background: linear-gradient(180deg, #964BFF 0%, #722AD8 100%);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__container {
+        max-width: 85%;
+        position: relative;
+        top: -1rem;
+
+        @include m.tablet{
+            max-width: 99%;
+        }
+    }
+
+    &__image-container {
+        width: 90%;
+        height: 425rem;
+        background: url("../images/cart-transparent-1.png") center / contain no-repeat;
+        position: absolute;
+        bottom: -1rem;
+        left: -219rem;
+
+        @include m.tablet {
+            width: 50%;
+            height: 272rem;
+            left: 29rem;
+        }
+
+        @include m.mobile {
+            width: 90%;
+            height: 244rem;
+            left: -22rem;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 21rem;
+        right: 230rem;
+        color: #FFF;
+        text-align: right;
+        font-style: normal;
+
+        @include m.tablet {
+            left: 342rem;
+            top: 9rem;
+            width: 53%;
+        }
+
+        @include m.mobile {
+            left: -19rem;
+            width: 100%;
+            top: 7rem;
+        }
+    }
+
+    &__title {
+        width: 497rem;
+        height: 198rem;
+        font-family: Montserrat Alternates;
+        font-size: 90rem;
+        font-weight: 900;
+        line-height: 110%;
+        text-shadow: 0rem 7rem 0rem rgba(0, 0, 0, 0.30);
+
+        @include m.tablet {
+            text-shadow: 0rem 4rem 0rem rgba(0, 0, 0, 0.3);
+            width: 75%;
+            height: 133rem;
+            font-size: 52rem;
+        }
+
+        @include m.mobile {
+            width: 100%;
+            font-size: 36rem;
+            height: 86rem;
+            letter-spacing: 1.5rem;
+        }
+
+        &-highlighted {
+            color: #FEB905;
+        }
+    }
+
+    &__description {
+        width: 400rem;
+        height: 63rem;
+        position: absolute;
+        bottom: -17rem;
+        right: 0;
+        font-family: Montserrat;
+        font-size: 20rem;
+        font-weight: 400;
+        line-height: normal;
+
+        @include m.tablet {
+            width: 50%;
+            font-size: 11rem;
+            left: 99rem;
+            letter-spacing: 0.2rem;
+        }
+
+        @include m.mobile {
+            width: 75%;
+            font-size: 15rem;
+        }
+
+        &-highlighted {
+            color: #FFBC05;
+            font-weight: 600;
+        }
+    }
+
+    &__slider-wrapper {
+        width: 100%;
+        margin: 0 auto;
+
+        @include m.mobile {
+            display: none;
+        }
+    }
+
+    &__slider-container {
+        width: 91%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include m.tablet {
+            width: 99%;
+            padding: 7rem 0;
+        }
+
+        .arrow {
+            background: url("../images/arrow.svg") center / 77% no-repeat;
+            width: 77rem;
+            height: 77rem;
+            flex-shrink: 0;
+
+            &__left {
+                transform: rotate(0);
+            }
+
+            &__right {
+
+                transform: rotate(180deg);
+
+                @include m.tablet {
+                    margin-right: 10rem;
+                }
+            }
+        }
+    }
+
+    &__slider-arrow {
+        width: 59rem;
+        height: 59rem;
+    }
+
+    &__slider-pagination {
+        display: flex;
+        gap: 20rem;
+        position: absolute;
+        bottom: 33.5rem;
+        left: 49.8%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 73rem;
+        height: 13rem;
+
+        @include m.tablet {
+            gap: 29rem;
+            left: 47%;
+            bottom: 20rem;
+        }
+
+        .circle {
+            width: 13rem;
+            height: 13rem;
+            flex-shrink: 0;
+
+            @include m.tablet {
+                width: 17rem;
+                height: 17rem;
+            }
+            @include m.mobile{
+                width: 15rem;
+                height: 15rem;
+            }
+
+            &__fill-white {
+                background: url("../images/circle-fill-white.svg") center / 100% no-repeat;
+            }
+
+            &__fill-none {
+                background: url("../images/circle-fill-none.svg") center / 100% no-repeat;
+            }
+        }
+    }
+
+
+}

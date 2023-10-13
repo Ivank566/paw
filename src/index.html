@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Paw</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__logo"></div>
+            <nav class="header__navigation">
+              <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                  <a class="header__link" href=""
+                    >For <span class="header__link-bolder">CAT</span></a
+                  >
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__link" href=""
+                    >For <span class="header__link-bolder">DOG</span></a
+                  >
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__link" href="">Contacts</a>
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__link" href="">Tracking</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <p class="header__number">1-800-055-5566</p>
+              <div class="header__user"></div>
+              <div class="header__cart">
+                <div class="circle circle_big">
+                  <img src="./images/cart.png" alt="" />
+                  <div class="circle circle_small">
+                    <span class="circle__count">2</span>
+                  </div>
+                </div>
+                <span class="header__cart-price">$8</span>
+              </div>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="banner">
+          <div class="banner__wrapper">
+          <div class="banner__pattern"></div>
+          <div class="banner__container">
+            <div class="banner__text">
+              <h1 class="banner__text-title">Make your pet’s life better</h1>
+              <p class="banner__text-description">
+                Toys and accessories that your pet will like
+              </p>
+            </div>
+            <div class="banner__benefits">
+              <div class="benefits__container">
+                <div class="benefits__item">
+                  <div class="benefits__vector benefits__vector-star"></div>
+                  <p class="benefits__text">
+                    <span class="benefits__text-strong">Unique</span> products
+                  </p>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__vector benefits__vector-support"></div>
+                  <p class="benefits__text">
+                    <span class="benefits__text-strong">24/7</span> support
+                  </p>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__vector benefits__vector-return"></div>
+                  <p class="benefits__text">
+                    <span class="benefits__text-strong">Free return</span>
+                    within 15 days
+                  </p>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__vector benefits__vector-checkmark"></div>
+                  <p class="benefits__text">
+                    <span class="benefits__text-strong">Happy</span> pet
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="banner__cat">
+              <div class="cat__button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  class="vector__icon"
+                >
+                  <path
+                    d="M10.4992 10.8114L1.12353 1.18867M1.12353 1.18867L1.02601 8.68804M1.12353 1.18867L8.6229 1.28619"
+                    stroke="black"
+                    stroke-width="0.5"
+                  />
+                </svg>
+                <p class="cat__button-text">
+                  For <span class="cat__text">CAT</span>
+                </p>
+              </div>
+            </div>
+            <div class="banner__dog">
+              <div class="dog__button">
+                <p class="dog__button-text">
+                  For <span class="dog__text">DOG</span>
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  class="vector__icon"
+                >
+                  <path
+                    d="M1 9.75L10.5 0.25M10.5 0.25H3M10.5 0.25V7.75"
+                    stroke="black"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="offer">
+          <div class="offer__wrapper">
+          <div class="offer offer__container">
+            <div class="offer offer__slider-wrapper">
+              <div class="offer offer__slider-wrapper offer__slider-container">
+                <div class="arrow arrow__left"></div>
+                <div class="arrow arrow__right"></div>
+              </div>
+            </div>
+            <div class="offer__image-container"></div>
+            <div class="offer__content">
+              <h1 class="offer__title">
+                <span class="offer__title-highlighted">FREE</span> SHIPPING
+              </h1>
+              <p class="offer__description">
+                Go to your shopping cart and use promocode
+                <span class="offer__description-highlighted">FREESHIPPING</span>
+              </p>
+            </div>
+
+            <div class="offer__slider-pagination">
+              <div class="circle circle__fill-white"></div>
+              <div class="circle circle__fill-none"></div>
+              <div class="circle circle__fill-none"></div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="products">
+          <div class="products__wrapper">
+            <div class="products__container">
+              <h2 class="products__title">Popular products</h2>
+              <div class="products__row">
+                <div class="products__column">
+                  <div class="card">
+                    <div class="card__image-container">
+                      <img
+                        class="card__image"
+                        src="./images/product-ball.png"
+                        alt="ball"
+                      />
+                    </div>
+                    <div class="card__content">
+                      <p class="card__title">
+                        Ball for a dog «Denta Fun» d=5 см (rubber)
+                      </p>
+                      <div class="card__stars">
+                        <div class="stars__container">
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__half"></div>
+                        </div>
+                        <p class="card__stars-number">2</p>
+                      </div>
+                      <div class="card__price">
+                        <div class="card__price-details">
+                          <p class="card__price-value">$4</p>
+                        </div>
+                        <div
+                          class="card__price-details card__price-details--cart"
+                        >
+                          <p class="price__cart-plus">+</p>
+                          <div class="price__cart-icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__column">
+                  <div class="card">
+                    <div class="card__image-container">
+                      <div class="card__discount-label">
+                        <span class="card__label-value">-50%</span>
+                      </div>
+                      <img
+                        class="card__image"
+                        src="./images/product-barbell.png"
+                        alt="barbell"
+                      />
+                    </div>
+                    <div class="card__content">
+                      <p class="card__title">
+                        Dog Toys Big Dog barbell Chew toy Interactive Stress
+                        Relief Dog Toy
+                      </p>
+                      <div class="card__stars">
+                        <div class="stars__container">
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__half"></div>
+                        </div>
+                        <p class="card__stars-number">5</p>
+                      </div>
+                      <div class="card__price">
+                        <div class="card__price-details">
+                          <p class="card__price-value card__price-discount">
+                            $5
+                          </p>
+                          <span class="card__price-original">$10</span>
+                        </div>
+                        <div
+                          class="card__price-details card__price-details--cart"
+                        >
+                          <p class="price__cart-plus">+</p>
+                          <div class="price__cart-icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__column">
+                  <div class="card">
+                    <div class="card__image-container">
+                      <div class="card__new-label">
+                        <span class="card__label-value">New</span>
+                      </div>
+                      <img
+                        class="card__image"
+                        src="./images/product-rope.png"
+                        alt="rope"
+                      />
+                    </div>
+                    <div class="card__content">
+                      <p class="card__title">
+                        Mammoth Cottonblend 3 Knot Dog Rope Toy, Color Varies,
+                        Large
+                      </p>
+                      <div class="card__stars">
+                        <div class="stars__container">
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__half"></div>
+                        </div>
+                        <p class="card__stars-number">10</p>
+                      </div>
+                      <div class="card__price">
+                        <div class="card__price-details">
+                          <p class="card__price-value">$8.5</p>
+                        </div>
+                        <div
+                          class="card__price-details card__price-details--cart"
+                        >
+                          <p class="price__cart-plus">+</p>
+                          <div class="price__cart-icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__column">
+                  <div class="card">
+                    <div class="card__image-container">
+                      <img
+                        class="card__image"
+                        src="./images/product-bird.png"
+                        alt="bird"
+                      />
+                    </div>
+                    <div class="card__content">
+                      <p class="card__title">
+                        Frisco Bird Teaser with Feathers Cat Toy
+                      </p>
+                      <div class="card__stars">
+                        <div class="stars__container">
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__full"></div>
+                          <div class="stars__half"></div>
+                        </div>
+                        <p class="card__stars-number">10</p>
+                      </div>
+                      <div class="card__price">
+                        <div class="card__price-details">
+                          <p class="card__price-value">$3.42</p>
+                        </div>
+                        <div
+                          class="card__price-details card__price-details--cart"
+                        >
+                          <p class="price__cart-plus">+</p>
+                          <div class="price__cart-icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__button-container">
+              <button class="products__button products__button--cat">
+                <span class="products__category"
+                  >Products for
+                  <span class="products__category--cat">CAT</span></span
+                >
+                <img
+                  class="products__icon"
+                  src="./images/cat.svg"
+                  alt="icon cat"
+                />
+                <svg
+                  class="products__vector"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                >
+                  <path
+                    d="M1 9.75L10.5 0.25M10.5 0.25L3 0.25M10.5 0.25V7.75"
+                    stroke="black"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </button>
+              <button class="products__button products__button--dog">
+                <span class="products__category"
+                  >Products for
+                  <span class="products__category--dog">DOG</span></span
+                >
+                <img
+                  class="products__icon"
+                  src="./images/dog.svg"
+                  alt="icon dog"
+                />
+                <svg
+                  class="products__vector"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                >
+                  <path
+                    d="M1 9.75L10.5 0.25M10.5 0.25L3 0.25M10.5 0.25V7.75"
+                    stroke="black"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="reviews reviews__wrapper">
+            <div class="reviews__container">
+              <h1 class="reviews__title">Reviews</h1>
+              <div class="reviews__container reviews__slider-arrows">
+                <div class="arrow arrow__left"></div>
+                <div class="arrow arrow__right"></div>
+              </div>
+
+              <div class="reviews__row">
+                <div class="reviews__column">
+                  <div class="reviews__comment">
+                    <time class="reviews__date" datetime="2022-07-19"
+                      >19.07.2022</time
+                    >
+                    <div class="reviews__item">
+                      <div class="reviews__user">Alex</div>
+                      <div class="reviews__stars"></div>
+                    </div>
+                    <div class="reviews__text">
+                      Dog loved this thing even before I got it completely out
+                      of the box. Within 1 hr. cover was torn and inside
+                      exposed. Tossing, chewing and shaking went on for an hour
+                      straight. Removed it from her mouth and all goes back to
+                      good. Might have been a one off, but be watchful. Would
+                      buy again.
+                    </div>
+
+                    <div class="reviews__photos">
+                      <div class="reviews__photo">
+                        <img
+                          class="reviews__photo--image"
+                          src="./images/review-photo-1.png"
+                          alt="review-photo-1"
+                        />
+                      </div>
+                      <div class="reviews__photo">
+                        <img
+                          class="reviews__photo--image"
+                          src="./images/review-photo-2.png"
+                          alt="review-photo-2"
+                        />
+                      </div>
+                      <div class="reviews__photo">
+                        <img
+                          class="reviews__photo--image"
+                          src="./images/review-photo-3.png"
+                          alt="review-photo-3"
+                        />
+                      </div>
+                      <div class="reviews__photo reviews__info">
+                        <span class="reviews__info-text">+5</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="reviews__link">
+                    <span class="reviews__link-text">See the product</span>
+                    <svg
+                      class="reviews__link-icon"
+                      class=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10.4L10.5 0.900024M10.5 0.900024H3M10.5 0.900024V8.40002"
+                        stroke="#8936FF"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="reviews__column">
+                  <div class="reviews__comment">
+                    <time class="reviews__date" datetime="2022-07-15"
+                      >15.07.2022</time
+                    >
+                    <div class="reviews__item">
+                      <div class="reviews__user">Richard</div>
+                      <div class="reviews__stars"></div>
+                    </div>
+                    <div class="reviews__text">
+                      This is our dog's favorite toy. She plays with it indoors
+                      and outdoors. It is not very durable, because she is a
+                      chewer. She pulls the "threads" out one by one until she
+                      takes the cover off, then chews the foam football apart
+                      bite by bite. We let her play indoors with it until she
+                      starts leaving little white pieces of foam around house,
+                      then we leave it outdoors until she pulls the cover off
+                      and destroys the rest of it.
+                    </div>
+                  </div>
+
+                  <button class="reviews__link">
+                    <span class="reviews__link-text">See the product</span>
+                    <svg
+                      class="reviews__link-icon"
+                      class=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10.4L10.5 0.900024M10.5 0.900024H3M10.5 0.900024V8.40002"
+                        stroke="#8936FF"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="reviews__column">
+                  <div class="reviews__comment">
+                    <time class="reviews__date" datetime="2022-07-19"
+                      >19.07.2022</time
+                    >
+                    <div class="reviews__item">
+                      <div class="reviews__user">Alex</div>
+                      <div class="reviews__stars"></div>
+                    </div>
+                    <div class="reviews__text">
+                      Our 6 month old German Shepherd puppy loves this dragon!
+                      It has quickly become a favorite in just a few days. The
+                      dragon's wings make a crinkle noise and it's belly
+                      squeaks. It's perfect for fetch and tug of war. He also
+                      loves to just carry it around, squeak and shake It. Will
+                      definitely buy more toys.
+                    </div>
+
+                    <div class="reviews__photos">
+                      <div class="reviews__photo">
+                        <img
+                          class="reviews__photo--image"
+                          src="./images/review-photo-4.png"
+                          alt="review-photo-4"
+                        />
+                      </div>
+                      <div class="reviews__photo">
+                        <img
+                          class="reviews__photo--image"
+                          src="./images/review-photo-2.png"
+                          alt="review-photo-2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="reviews__link">
+                    <span class="reviews__link-text">See the product</span>
+                    <svg
+                      class="reviews__link-icon"
+                      class=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 10.4L10.5 0.900024M10.5 0.900024H3M10.5 0.900024V8.40002"
+                        stroke="#8936FF"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="reviews__slider-pagination">
+                <div class="circle circle__fill-white"></div>
+                <div class="circle circle__fill-none"></div>
+                <div class="circle circle__fill-none"></div>
+                <div class="circle circle__fill-none"></div>
+                <div class="circle circle__fill-none"></div>
+                <div class="circle circle__fill-none"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about about__wrapper">
+            <div class="about about__container">
+              <h2 class="about__title">About us</h2>
+              <div class="about__article-container">
+                <article class="about__article">
+                  <img
+                    class="article__image"
+                    src="./images/about-image-dog.png"
+                    alt="dog"
+                  />
+                  <div class="article__text">
+                    <h3 class="article__title">
+                      <span class="article__highlight">Playtime</span> is your
+                      pup’s
+                      <span class="article__highlight">favorite time</span>.
+                      Your dog needs play for his overall health and happiness.
+                    </h3>
+                    <p class="article__paragraph article__paragraph--smaller">
+                      Dogs are pack animals, requiring physical play with you
+                      and other dogs. One of the most important benefits of
+                      doggie play is that it’s a bonding opportunity for you and
+                      your canine companion. Another benefit of pup play is
+                      exercise.
+                    </p>
+                    <p class="article__paragraph">
+                      Playtime is also a great opportunity for puppy teaching
+                      moments. You can train your dog through play, and with dog
+                      toys. We carries the best dog toys from top dog toy makers
+                      like USA Bones & Chews, Nylabone, and KONG. There are dog
+                      balls and dog fetch toys, dog chew toys, plush dog toys,
+                      interactive dog toys, dog puzzles and rope and tug dog
+                      toys for your pup to play with.
+                    </p>
+                    <p class="article__paragraph">
+                      Plush dog toys are great for canine’s seeking comfort as
+                      they can ease some pup anxiety. Interactive dog toys help
+                      stimulate your pup’s mind, which is the key to a
+                      fulfilling life. If your pup loves to chew on your prized
+                      possessions, dog chew toys can come to the rescue.
+                    </p>
+                  </div>
+                </article>
+                <article class="about__article">
+                  <div class="article__text">
+                    <h3 class="article__title">
+                      Cats <span class="article__highlight">love to play</span>,
+                      but did you know that playtime is vital activity for
+                      kittens and adult cats too?
+                    </h3>
+                    <p class="article__paragraph">
+                      Here you’ll find the best cat toys for every type of cat
+                      personality. For the active cat who’s agenda-driven, toys
+                      provide a much-needed physical release.
+                    </p>
+                    <p class="article__paragraph">
+                      Having this type of cat personality means your cat loves
+                      to hunt, jump and run. If your feline friend matches this
+                      description, they’ll most likely prefer a playtime that
+                      includes cat ball toys, cat feather wands, and cat wands &
+                      teaser toys. Cat balls and chaser toys allow cats to swat,
+                      chase and pounce—all their favorite activities.
+                    </p>
+                    <p class="article__paragraph">
+                      The best teaser toys are made with bright colors or sound
+                      effects to help entice curious cats. Teaser toys allow you
+                      to lift the object of desire above the cat where they can
+                      jump to reach. In addition, cat tunnels, cat chew toys and
+                      catnip toys are playtime favorites that your cat will love
+                      because they each bring something new to the table.
+                    </p>
+                  </div>
+                  <img
+                    class="article__image"
+                    src="./images/about-image-cat.png"
+                    alt="cat"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe">
+          <div class="subscribe subscribe__wrapper">
+            <div class="subscribe__container">
+              <p class="subscribe__text">
+                Get the latest news and promotions. No spam, just a few emails
+                per year.
+              </p>
+              <div class="subscribe__form">
+                <form class="subscribe__form-element">
+                  <input
+                    type="email"
+                    id="email"
+                    class="subscribe__input"
+                    placeholder="Your e-mail"
+                    required
+                  />
+                  <button type="submit" class="subscribe__submit">
+                    <span class="subscribe__submit-text">Subscribe</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer footer__wrapper">
+        <div class="footer__wrapper footer__container">
+          <div class="footer__row">
+            <div class="footer__column">
+              <div class="footer__logo">
+                <div class="logo__icon"></div>
+                <span class="logo__text">PawShop</span>
+              </div>
+
+              <div class="footer__number">
+                <div class="number__icon"></div>
+                <span class="number__text">1-800-055-5566</span>
+              </div>
+              <div class="footer__social"></div>
+            </div>
+            <div class="footer__column">
+              <div class="footer__links">
+                <ul class="footer__list">
+                  <li class="footer__item">Home</li>
+                  <li class="footer__item">Cat supplies</li>
+                  <li class="footer__item">Dog supplies</li>
+                  <li class="footer__item">Contacts</li>
+                  <li class="footer__item">Tracking</li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__item">Terms of Service</li>
+                  <li class="footer__item">Refund policy</li>
+                  <li class="footer__item">Privacy policy</li>
+                  <li class="footer__item">Shipping policy</li>
+                  <li class="footer__item">FAQ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="footer__line" />
+          <div class="footer__info">
+            <div class="footer__payments">
+              <img
+                class="footer__payment-image"
+                src="./images/fondy.png"
+                alt="payment 1"
+              />
+              <img
+                class="footer__payment-image"
+                src="./images/paypal.png"
+                alt="payment 2"
+              />
+              <img
+                class="footer__payment-image"
+                src="./images/liqpay.png"
+                alt="payment 3"
+              />
+              <img
+                class="footer__payment-image"
+                src="./images/wayforpay.png"
+                alt="payment 4"
+              />
+              <img
+                class="footer__payment-image"
+                src="./images/cheque.png"
+                alt="payment 5"
+              />
+            </div>
+
+            <p class="footer__copyright">
+              Copyright © 2022. All Rights Reserved by SleepGo
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

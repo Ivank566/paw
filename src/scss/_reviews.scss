@@ -1,0 +1,380 @@
+@use "./media-breakpoints" as m;
+
+$light-grey: #EEE;
+$dark-grey: #5A5A5A;
+$accent: #8936FF;
+$gradient: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
+
+
+.reviews {
+    width: 100%;
+    height: 845rem;
+    flex-shrink: 0;
+
+    @include m.tablet {
+        height: 858rem;
+    }
+    @include m.mobile{
+        height: 701rem;
+    }
+
+    &__wrapper {
+        background: url("../images/dogbg.webp") left/contain no-repeat, linear-gradient(80deg, #964BFF 6.76%, #722AD8 97.75%) right top/100% no-repeat;
+        display: flex;
+        justify-content: center;
+
+        @include m.tablet {
+            background: url("../images/dogbg.webp") left -343rem top 37rem/contain no-repeat, linear-gradient(80deg, #964BFF 6.76%, #722AD8 97.75%) right top/100% no-repeat;
+            background-size: 190%;
+        }
+    }
+
+    &__container {
+        width: 1465rem;
+        height: 762rem;
+        display: flex;
+        gap: 10rem;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        @include m.tablet {
+            justify-content: normal;
+            height: 718rem;
+            gap: 43rem;
+        }
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat Alternates;
+        font-size: 36rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-shadow: 0rem 5rem 0rem rgba(0, 0, 0, 0.30);
+
+        @include m.tablet {
+            margin: 91rem 8rem 0rem 0rem;
+        }
+
+        @include m.mobile {
+            margin: 38rem 0rem 0rem 0rem;
+            font-size: 24rem;
+        }
+    }
+
+    &__slider-arrows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+        top: 60rem;
+
+        .arrow {
+            background: url("../images/arrow.svg") center / 77% no-repeat;
+            width: 77rem;
+            height: 77rem;
+            flex-shrink: 0;
+
+            &__left {
+                transform: rotate(0);
+            }
+
+            &__right {
+
+                transform: rotate(180deg);
+
+                @include m.tablet {
+                    margin-right: 10rem;
+                }
+            }
+        }
+
+        @include m.tablet {
+            width: 67%;
+            align-items: flex-end;
+            bottom: 0;
+        }
+
+        @include m.mobile {
+            display: none;
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 32rem;
+        align-items: flex-start;
+
+        @include m.tablet {
+            width: 97%;
+            gap: 17rem;
+        }
+
+        @include m.mobile {
+            max-width: 368rem;
+            overflow: hidden;
+            margin-left: 17rem;
+        }
+    }
+
+    &__column {
+        display: flex;
+        width: 280rem;
+        padding: 40rem 48rem 47rem 40rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20rem;
+        border-radius: 20rem;
+        background: #FFF;
+        box-shadow: 0rem 5rem 20rem 0rem rgba(0, 0, 0, 0.25);
+
+        @include m.tablet {
+            width: 37%;
+            padding: 40rem 43rem 47rem 41rem;
+
+            &:last-child {
+                display: none;
+            }
+        }
+
+        @include m.mobile {
+            width: 60%;
+            padding: 32rem 56rem 42rem 32rem;
+        }
+    }
+
+    &__date {
+        width: 100rem;
+        height: 13rem;
+        color: $dark-grey;
+        font-family: Montserrat;
+        font-size: 13rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__comment {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+
+        @include m.tablet {
+            width: 103%;
+            gap: 17rem;
+        }
+
+        @include m.mobile {
+            width: 120%;
+            gap: 20rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 103%;
+        
+        @include m.mobile{
+           width: 96%; 
+        }
+    }
+
+    &__user {
+        flex: 1 0 0;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__stars {
+        width: 55%;
+        height: 25rem;
+        flex-shrink: 0;
+        background: url("../images/stars.svg") right / 80% no-repeat;
+
+        @include m.tablet {
+            width: 55%;
+            margin-right: 10rem;
+        }
+        @include m.mobile{
+            background: url("../images/stars.svg") right / 95% no-repeat;
+        }
+    }
+
+
+
+    &__text {
+        width: 102%;
+        align-self: stretch;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.2;
+
+        @include m.tablet {
+            width: 98%;
+        }
+
+        @include m.mobile {
+            overflow: hidden;
+            height: 180rem;
+            width: 93%;
+        }
+    }
+
+    &__photos {
+        display: flex;
+        gap: 10rem;
+        margin-top: 3rem;
+
+    }
+
+    &__photo {
+        flex-shrink: 0;
+
+        @include m.mobile {
+
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+
+        &--image {
+            width: 64rem;
+            height: 66.5rem;
+
+            @include m.mobile{
+                width: 69rem;
+                height: 70rem;
+            }
+        }
+
+    }
+
+    &__info {
+        width: 63rem;
+        height: 64rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10rem;
+        border: 1rem solid $accent;
+
+        &-text {
+            color: $accent;
+            font-family: Inter;
+            font-size: 15rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration-line: underline;
+        }
+    }
+
+    &__link {
+        width: 80%;
+        height: 15rem;
+        flex-shrink: 0;
+        color: $accent;
+        background-color: #FFF;
+        border: 0;
+        display: flex;
+        align-items: center;
+        gap: 15rem;
+        margin: 2rem 0rem 0rem -7rem;
+
+        @include m.tablet {
+            margin: 0rem 0rem 0rem -7rem;
+        }
+        @include m.mobile{
+            margin: 4rem 0rem 0rem -7rem;
+        }
+
+        &-text {
+            font-family: Montserrat Alternates;
+            font-size: 14rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-icon {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+
+    &__slider-pagination {
+        width: 79rem;
+        height: 13rem;
+        display: flex;
+        flex-shrink: 0;
+        gap: 20rem;
+        justify-content: center;
+        position: absolute;
+        bottom: 15rem;
+
+        @include m.tablet {
+            height: 15rem;
+            bottom: -28rem;
+            gap: 30rem;
+            margin: 0rem 9rem 0rem 0rem;
+        }
+        @include m.mobile{
+            gap: 27rem;
+            bottom: 72rem;
+            margin: 0rem -3rem 0rem 0rem;
+        }
+    }
+
+    .circle {
+        width: 13rem;
+        height: 13rem;
+        flex-shrink: 0;
+
+        &:nth-last-child(-n + 3) {
+            display: none;
+        }
+
+        @include m.tablet {
+            width: 20rem;
+            height: 20rem;
+
+            &:nth-last-child(n+3) {
+                display: block;
+            }
+
+        }
+
+        @include m.mobile {
+            width: 16.5rem;
+            height: 16.5rem;
+
+            &:nth-last-child(n) {
+                display: block;
+            }
+
+        }
+
+        &__fill-white {
+            background: url("../images/circle-fill-white.svg") center / 100% no-repeat;
+        }
+
+        &__fill-none {
+            background: url("../images/circle-fill-none.svg") center / 100% no-repeat;
+        }
+    }
+}

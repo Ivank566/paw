@@ -1,0 +1,246 @@
+@use "./media-breakpoints" as m;
+
+.header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    @include m.tablet{
+        width: 100%;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 79rem;
+    display: flex;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+
+    &.bg-white {
+        background-color: #fff;
+    }
+
+
+
+    &__container {
+        width: 61%;
+        margin: 0 auto;
+        padding: 0 10rem;
+
+        @include m.tablet{
+            width: 98%;
+        }
+        
+    }
+    
+
+    &__body {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 40rem;
+        align-items: center;
+        justify-content: space-between;
+
+        @include m.tablet{
+            width: 98%;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        &.active {
+            background: url("../images/exit.svg") right / contain no-repeat;
+            width: 47rem;
+            height: 47rem;
+        }
+
+        @include m.mobile{
+            display: block;
+            background: url("../images/menu.svg") right / contain no-repeat;
+            width: 33rem;
+            height: 24rem;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 3;
+        }
+
+        @include m.tablet {
+            display: block;
+            background: url("../images/menu.svg") right / contain no-repeat;
+            width: 33rem;
+            height: 24rem;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    &__logo {
+        background: url("../images/logo.png") center / contain no-repeat;
+        width: 116rem;
+        height: 43rem;
+        position: relative;
+        z-index: 3;
+
+        @include m.mobile{
+            width: 100%;
+        }
+    }
+
+    &__navigation {
+        width: 52%;
+
+        @include m.tablet {
+            width: 100%;
+            height: 170rem;
+            position: fixed;
+            top: -100%;
+            left: 0;
+            border-radius: 0rem 0rem 20rem 20rem;
+            background: #FFF;
+            padding: 100rem 0rem 0rem 0rem;
+            transition: all 0.3s ease 0s;
+
+            &.active {
+                top: 0;
+            }
+        }
+
+        &-list {
+            list-style: none;
+            display: flex;
+            gap: 40rem;
+            flex: 1 0 0;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            width: 84%;
+
+            @include m.tablet {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 150rem;
+                justify-content: flex-start;
+            }
+        }
+
+        &-item {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 15rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+
+        &-bolder {
+            font-weight: 500;
+        }
+    }
+
+    &__info {
+        
+        display: flex;
+        justify-content: flex-end;
+        gap: 51rem;
+        align-items: center;
+
+        @include m.tablet{
+            width: 75%; 
+            gap: 34rem;
+        }
+    }
+
+    &__number {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20rem;
+        font-weight: 500;
+        position: relative;
+        z-index: 3;
+
+        @include m.tablet{
+            width: 48%;
+        }
+        @include m.mobile{
+            display: none;
+        }
+    }
+
+    &__user {
+        background: url("../images/user.png") center / contain no-repeat;
+        width: 26rem;
+        height: 26rem;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__cart {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        position: relative;
+        z-index: 3;
+
+        &-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15rem;
+            font-weight: 500;
+
+            @include m.mobile{
+                display: none;
+            }
+        }
+
+        .circle {
+            border-radius: 50%;
+
+
+            &_big,
+            &_small {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &_big {
+                position: relative;
+                width: 50rem;
+                height: 50rem;
+                background-color: #8936FF;
+                filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.15));
+
+                & img {
+                    width: 26rem;
+                    height: 26rem;
+                }
+            }
+
+            &_small {
+                position: absolute;
+                width: 22rem;
+                height: 22rem;
+                bottom: -5rem;
+                right: -5rem;
+                background: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
+            }
+
+            .circle__count {
+                font-family: Montserrat;
+                font-size: 15rem;
+                color: #fff;
+            }
+        }
+    }
+}

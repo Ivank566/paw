@@ -1,0 +1,229 @@
+@use "./media-breakpoints" as m;
+
+.about {
+    width: 100%;
+    height: 1404rem;
+    flex-shrink: 0;
+
+    @include m.tablet {
+        height: 1345rem;
+    }
+
+    @include m.mobile {
+        height: 1670rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        background: url("../images/about-paws-1.png") top 230rem right / 350rem 525rem no-repeat,
+            url("../images/about-paws-2.png") bottom 139rem left / 285rem 525rem no-repeat;
+
+        @include m.tablet {
+            background: none;
+        }
+    }
+
+    &__container {
+        width: 81%;
+        height: 1397rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include m.tablet {
+            width: 98%;
+            height: 1187rem;
+
+        }
+
+        @include m.mobile {
+            height: 1695rem;
+            gap: 5rem;
+        }
+    }
+
+    &__title {
+        color: #000;
+        font-family: Montserrat Alternates;
+        font-size: 36rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @include m.mobile {
+            font-size: 24rem;
+        }
+    }
+
+    &__article-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25rem;
+        align-items: center;
+
+        @include m.tablet {
+            width: 90%;
+            position: relative;
+            left: -87rem;
+            top: 43rem;
+            gap: 25rem;
+        }
+
+        @include m.mobile {
+            width: 100%;
+            gap: 30rem;
+            align-items: center;
+            left: 0;
+            top: 25rem;
+        }
+
+        :last-child {
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 55rem;
+
+            @include m.tablet {
+                justify-content: initial;
+                left: -48rem;
+                gap: 72rem;
+                top: 84rem;
+
+                .article__image {
+                    object-position: left bottom;
+                    object-fit: cover;
+                    width: 79.4%;
+                }
+            }
+
+            @include m.mobile {
+                flex-direction: column-reverse;
+                gap: 0rem;
+
+                .article__image {
+                    width: 95%;
+                    height: 33%;
+                    object-position: initial;
+                    object-fit: initial;
+                    left: 7rem;
+                    top: -7rem;
+                }
+            }
+
+        }
+    }
+
+    &__article {
+        width: 90%;
+        display: flex;
+        gap: 63rem;
+        align-items: center;
+        position: relative;
+        justify-content: flex-start;
+
+        @include m.tablet {
+            width: 70%;
+            gap: 20rem;
+            top: 30rem;
+            left: -125rem;
+        }
+
+        @include m.mobile {
+            width: 90%;
+            flex-direction: column;
+            position: static;
+            gap: 5rem;
+        }
+    }
+
+    .article__image {
+        width: 683rem;
+        height: 523rem;
+        flex-shrink: 0;
+
+        @include m.tablet {
+            width: 92%;
+            height: 78%;
+            top: -15rem;
+            position: relative;
+        }
+
+        @include m.mobile {
+            width: 93%;
+            height: 33%;
+        }
+
+        &--dog {
+            width: 685rem;
+            height: 525rem;
+        }
+    }
+
+    .article__text {
+        display: flex;
+        width: 39%;
+        height: 480rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        gap: 18rem;
+
+        @include m.tablet {
+            width: 75%;
+        }
+
+        @include m.mobile {
+            width: 100%;
+        }
+    }
+
+    .article__title,
+    .article__highlight {
+        font-family: Montserrat Alternates;
+        font-size: 20rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @include m.mobile {
+            font-size: 16rem;
+        }
+    }
+
+    .article__title {
+        color: #000;
+        margin: 0;
+    }
+
+    .article__highlight {
+        color: $accent;
+    }
+
+    .article__paragraph {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 0;
+
+        @include m.mobile {
+            font-size: 14rem;
+        }
+
+        &--smaller {
+            width: 504rem;
+            margin-top: 4rem;
+            text-align: justify;
+
+            @include m.tablet {
+                width: 97%;
+                text-align: initial;
+            }
+        }
+
+    }
+
+}

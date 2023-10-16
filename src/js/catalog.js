@@ -1,3 +1,13 @@
+import '../scss/main.scss';
+import '../scss/_catalog.scss';
+
+import '../catalog.html';
+
+
+
+
+
+
 let headerBurger = document.querySelector('.header__burger');
 let menu = document.querySelector('.header__navigation');
 headerBurger.addEventListener('click', function(){
@@ -14,17 +24,10 @@ const scrollChange = 20;
 
 const add_class_on_scroll = () => {
   header.classList.remove("bg-white");
-  document.querySelectorAll('.header__link--cat, .header__link--dog').forEach(link => {
-    link.classList.add("header__link--black");
-  });
 };
 
 const remove_class_on_scroll = () => {
-  header.classList.add("bg-white");
-  document.querySelectorAll('.header__link--cat, .header__link--dog').forEach(link => {
-    link.classList.remove("header__link--black");
-  });
- 
+  header.classList.add("bg-white"); 
 };
 
 add_class_on_scroll();

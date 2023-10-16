@@ -45,16 +45,7 @@
     }
 
     &__title {
-        color: #000;
-        font-family: Montserrat Alternates;
-        font-size: 36rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-
-        @include m.mobile {
-            font-size: 24rem;
-        }
+        color: #000;    
     }
 
     &__article-container {
@@ -178,18 +169,7 @@
         }
     }
 
-    .article__title,
-    .article__highlight {
-        font-family: Montserrat Alternates;
-        font-size: 20rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-        @include m.mobile {
-            font-size: 16rem;
-        }
-    }
+    
 
     .article__title {
         color: #000;
@@ -202,16 +182,10 @@
 
     .article__paragraph {
         color: #000;
-        font-family: Montserrat;
-        font-size: 15rem;
-        font-style: normal;
-        font-weight: 300;
         line-height: 1.2;
         margin: 0;
 
-        @include m.mobile {
-            font-size: 14rem;
-        }
+        
 
         &--smaller {
             width: 504rem;
@@ -223,7 +197,5 @@
                 text-align: initial;
             }
         }
-
     }
-
 }

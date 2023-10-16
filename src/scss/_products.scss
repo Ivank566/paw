@@ -1,11 +1,6 @@
 @use "./media-breakpoints" as m;
 
 
-$light-grey: #EEE;
-$dark-grey: #5A5A5A;
-$accent: #8936FF;
-$gradient: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
-
 .products {
     width: 100%;
     height: 863rem;
@@ -52,15 +47,9 @@ $gradient: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
     }
 
     &__title {
-        font-family: Montserrat Alternates;
-        font-size: 36rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
         text-align: center;
 
         @include m.mobile {
-            font-size: 24rem;
             letter-spacing: 1rem;
         }
     }

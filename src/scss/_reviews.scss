@@ -1,10 +1,5 @@
 @use "./media-breakpoints" as m;
 
-$light-grey: #EEE;
-$dark-grey: #5A5A5A;
-$accent: #8936FF;
-$gradient: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
-
 
 .reviews {
     width: 100%;
@@ -49,11 +44,6 @@ $gradient: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
     &__title {
         color: #FFF;
         text-align: center;
-        font-family: Montserrat Alternates;
-        font-size: 36rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
         text-shadow: 0rem 5rem 0rem rgba(0, 0, 0, 0.30);
 
         @include m.tablet {
@@ -62,7 +52,6 @@ $gradient: linear-gradient(158deg, #E9A904 11.83%, #FFC805 86.99%);
 
         @include m.mobile {
             margin: 38rem 0rem 0rem 0rem;
-            font-size: 24rem;
         }
     }
 

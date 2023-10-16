@@ -11,33 +11,22 @@
 @import "./media-breakpoints";
 
 
-
-
-$cat-color: #F9B105;
-$dog-color: #BE6E53;
-
-html, body{
-    
+html,
+body {
     height: 100%;
 }
 
 html {
     font-size: calc(1vw / 19.2);
 
-    @include tablet{
+    @include tablet {
         font-size: calc(1vw / 7.68);
     }
 
-    @include mobile{
+    @include mobile {
         font-size: calc(1vw / 3.85);
+    }
 }
-}
-
-
-
-
-
-
 
 body {
     margin: 0px;
@@ -53,12 +42,38 @@ h2,
 h3,
 h4 {
     font-family: Montserrat Alternates;
+    font-style: normal;
+    line-height: normal;
 }
 
+h2 {
+    font-size: 36rem;
+    font-weight: 700;
 
+    @include mobile {
+        font-size: 24rem;
+    }
+}
 
+h3 {
+    font-family: Montserrat Alternates;
+    font-size: 20rem;
+    font-weight: 500;
 
+    @include mobile {
+        font-size: 16rem;
+    }
+}
 
+p {
+    font-family: Montserrat;
+    font-size: 15rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 
-
+    @include mobile {
+        font-size: 14rem;
+    }
+}
 

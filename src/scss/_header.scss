@@ -86,6 +86,7 @@
     }
 
     &__logo {
+        
         background: url("../images/logo.png") center / contain no-repeat;
         width: 116rem;
         height: 43rem;
@@ -145,13 +146,26 @@
         text-decoration: none;
         color: #000;
 
-        &-bolder {
-            font-weight: 500;
+        &--cat{
+            color: $cat-color;
         }
+
+        &--dog{
+            color: $dog-color;
+        }
+
+        &--dog, &--cat{
+             font-weight: 500;
+        }
+
+        &--black {
+           color: #000;
+        }
+
     }
 
     &__info {
-        
+        width: 40%;
         display: flex;
         justify-content: flex-end;
         gap: 51rem;

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__logo"></div>
+            <nav class="header__navigation">
+              <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                  <a class="header__link" href=""
+                    >For <span class="header__link--cat">CAT</span></a
+                  >
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__link" href=""
+                    >For <span class="header__link--dog">DOG</span></a
+                  >
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__link" href="">Contacts</a>
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__link" href="">Tracking</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <p class="header__number">1-800-055-5566</p>
+              <div class="header__user"></div>
+              <div class="header__cart">
+                <div class="circle circle_big">
+                  <img src="./images/cart.png" alt="" />
+                  <div class="circle circle_small">
+                    <span class="circle__count">2</span>
+                  </div>
+                </div>
+                <span class="header__cart-price">$8</span>
+              </div>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__wrapper">
+          <div class="main__container">
+            <div class="pathway">
+              <p class="pathway__item">
+                Main > <span class="pathway__sub-item"> Catalog</span>
+              </p>
+            </div>
+            <h2 class="main__title">Catalog</h2>
+            <div class="product-filter">
+              <div class="product-filter__button active">
+                <span class="product-filter__category"
+                  >For
+                  <span class="product-filter__category--cat">CAT</span></span
+                >
+                <div
+                  class="product-filter__icon product-filter__icon--cat"
+                ></div>
+              </div>
+              <div class="product-filter__button">
+                <span class="product-filter__category"
+                  >For
+                  <span class="product-filter__category--dog">DOG</span></span
+                >
+                <div
+                  class="product-filter__icon product-filter__icon--dog"
+                ></div>
+              </div>
+              <div class="product-filter__line"></div>
+            </div>
+            
+            <div class="main__catalog">
+              <div class="main__controls">
+                <div class="controls-container">
+                  <div class="button-container">
+                    <button class="button-container__item">
+                      <span class="button-container__item-text">All</span>
+                    </button>
+                    <button class="button-container__item">
+                      <span class="button-container__item-text">Balls</span>
+                    </button>
+                    <button class="button-container__item">
+                      <span class="button-container__item-text">Beds</span>
+                    </button>
+                    <button class="button-container__item">
+                      <span class="button-container__item-text">Soft toys</span>
+                    </button>
+                  </div>
+                  <div class="sort-container">
+                    <span class="sort-container__text">Sort by: </span>
+                    <select
+                      class="sort-container__selection"
+                      name="sort-select"
+                      id=""
+                    >
+                      <option class="selection__option" value="1" selected>
+                        Relevance
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="main__products">
+                <div class="products__container">
+                <div class="products__row">
+                    <div class="products__column">
+                      <div class="card">
+                        <div class="card__image-container">
+                          <img
+                            class="card__image"
+                            src="./images/product-ball.png"
+                            alt="ball"
+                          />
+                        </div>
+                        <div class="card__content">
+                          <p class="card__title">
+                            Ball for a dog «Denta Fun» d=5 см (rubber)
+                          </p>
+                          <div class="card__stars">
+                            <div class="stars__container">
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__half"></div>
+                            </div>
+                            <p class="card__stars-number">2</p>
+                          </div>
+                          <div class="card__price">
+                            <div class="card__price-details">
+                              <p class="card__price-value">$4</p>
+                            </div>
+                            <div
+                              class="card__price-details card__price-details--cart"
+                            >
+                              <p class="price__cart-plus">+</p>
+                              <div class="price__cart-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="products__column">
+                      <div class="card">
+                        <div class="card__image-container">
+                          <div class="card__discount-label">
+                            <span class="card__label-value">-50%</span>
+                          </div>
+                          <img
+                            class="card__image"
+                            src="./images/product-barbell.png"
+                            alt="barbell"
+                          />
+                        </div>
+                        <div class="card__content">
+                          <p class="card__title">
+                            Dog Toys Big Dog barbell Chew toy Interactive Stress
+                            Relief Dog Toy
+                          </p>
+                          <div class="card__stars">
+                            <div class="stars__container">
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__half"></div>
+                            </div>
+                            <p class="card__stars-number">5</p>
+                          </div>
+                          <div class="card__price">
+                            <div class="card__price-details">
+                              <p class="card__price-value card__price-discount">
+                                $5
+                              </p>
+                              <span class="card__price-original">$10</span>
+                            </div>
+                            <div
+                              class="card__price-details card__price-details--cart"
+                            >
+                              <p class="price__cart-plus">+</p>
+                              <div class="price__cart-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="products__column">
+                      <div class="card">
+                        <div class="card__image-container">
+                          <div class="card__new-label">
+                            <span class="card__label-value">New</span>
+                          </div>
+                          <img
+                            class="card__image"
+                            src="./images/product-rope.png"
+                            alt="rope"
+                          />
+                        </div>
+                        <div class="card__content">
+                          <p class="card__title">
+                            Mammoth Cottonblend 3 Knot Dog Rope Toy, Color Varies,
+                            Large
+                          </p>
+                          <div class="card__stars">
+                            <div class="stars__container">
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__half"></div>
+                            </div>
+                            <p class="card__stars-number">10</p>
+                          </div>
+                          <div class="card__price">
+                            <div class="card__price-details">
+                              <p class="card__price-value">$8.5</p>
+                            </div>
+                            <div
+                              class="card__price-details card__price-details--cart"
+                            >
+                              <p class="price__cart-plus">+</p>
+                              <div class="price__cart-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="products__column">
+                      <div class="card">
+                        <div class="card__image-container">
+                          <img
+                            class="card__image"
+                            src="./images/product-bird.png"
+                            alt="bird"
+                          />
+                        </div>
+                        <div class="card__content">
+                          <p class="card__title">
+                            Frisco Bird Teaser with Feathers Cat Toy
+                          </p>
+                          <div class="card__stars">
+                            <div class="stars__container">
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__full"></div>
+                              <div class="stars__half"></div>
+                            </div>
+                            <p class="card__stars-number">10</p>
+                          </div>
+                          <div class="card__price">
+                            <div class="card__price-details">
+                              <p class="card__price-value">$3.42</p>
+                            </div>
+                            <div
+                              class="card__price-details card__price-details--cart"
+                            >
+                              <p class="price__cart-plus">+</p>
+                              <div class="price__cart-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

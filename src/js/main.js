@@ -1,5 +1,6 @@
 import '../scss/main.scss';
 import '../index.html';
+import '../catalog.html';
 import './header';
 
 
@@ -33,6 +34,8 @@ import '../images/support-benefits-icon.svg';
 import '../images/return-benefits-icon.svg';
 import '../images/checkmark-benefits-icon.svg';
 import '../images/footer-mobile.svg';
+import '../images/cat.svg';
+import '../images/dog.svg';
 
 
 

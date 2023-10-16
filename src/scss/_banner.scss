@@ -1,6 +1,4 @@
 @use "./media-breakpoints" as m;
-$cat-color: #F9B105;
-$dog-color: #BE6E53;
 
 .banner {
     width: 100%;
@@ -158,17 +156,11 @@ $dog-color: #BE6E53;
 
                 .benefits__text {
                     color: #000;
-                    font-family: Montserrat;
-                    font-size: 15rem;
-                    font-style: normal;
                     font-weight: 400;
-                    line-height: normal;
 
                     &-strong {
                         font-weight: 500;
                     }
-
-
                 }
             }
         }

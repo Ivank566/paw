@@ -16,13 +16,13 @@
     }
 
     @include m.mobile {
-        height: 246rem;
+        height: 248rem;
     }
 
     &__wrapper {
-        width: 74.5%;
-        background: url("../images/subscribe-bone.png") top left 90rem / 372rem 181rem no-repeat,
-            url("../images/subscribe-ball.png") bottom right 26rem / 342rem 180rem no-repeat;
+        width: 76%;
+        background: url("../images/subscribe-bone.png") top left 105rem / 372rem 181rem no-repeat,
+            url("../images/subscribe-ball.png") bottom right 40rem / 342rem 180rem no-repeat;
 
         @include m.tablet {
             width: 96%;

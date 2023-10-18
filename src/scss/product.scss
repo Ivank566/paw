@@ -1,0 +1,394 @@
+@import './main.scss';
+@import "./variables";
+@import "./header";
+@import "./media-breakpoints";
+
+.main {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 109rem;
+    justify-content: center;
+
+    &__container {
+        width: 61.5%;
+        display: flex;
+        gap: 32rem;
+        flex-direction: column;
+    }
+
+    &__product {}
+
+
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        gap: 42rem;
+
+
+        &__header {}
+
+        &__header-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__code {
+            font-family: Montserrat;
+            font-size: 15rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &-text {
+                color: #D1D1D1;
+            }
+
+            &-number {
+                color: #656565;
+            }
+        }
+
+
+        &__title {
+            margin: 0;
+        }
+
+        &__stars {
+            display: flex;
+            gap: 20rem;
+            align-items: center;
+
+            .stars__container {
+                display: flex;
+                gap: 10rem;
+
+                @include mobile {
+                    gap: 7rem;
+                }
+
+                .stars__number {
+                    font-size: 13rem;
+                }
+
+                .stars__full,
+                .stars__half {
+                    width: 26rem;
+                    height: 26rem;
+                    background-repeat: no-repeat;
+                }
+
+                .stars__full {
+                    background: url("../images/star-full.svg");
+                    background-size: contain;
+                }
+
+                .stars__half {
+                    background: url("../images/star-half.svg");
+                    background-size: contain;
+                }
+            }
+        }
+
+
+        &__info {
+            display: flex;
+            gap: 32rem;
+        }
+
+        &__photos {
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            width: 50%;
+            gap: 15rem;
+
+            .photos__aside {
+                display: flex;
+                gap: 10rem;
+                flex-direction: column;
+                width: 84rem;
+                height: 84rem;
+            }
+
+
+            .photo__aside {
+                width: 83rem;
+                height: 83rem;
+                flex-shrink: 0;
+            }
+
+
+            .photos__main {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            .photo__main {
+                width: 428rem;
+                height: 428rem;
+            }
+        }
+
+        .photos__border {
+            border-radius: 20rem;
+            border: 1rem solid $light-grey;
+
+
+            &.active {
+                border: 1rem solid $accent;
+            }
+        }
+
+
+        &__parameters {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30rem;
+
+            .parameters__item {
+                display: flex;
+                align-items: center;
+                gap: 28rem;
+
+                .item__title {
+                    width: 70rem;
+                    color: #181818;
+                }
+
+                .item__description {
+                    width: 100%;
+                    display: flex;
+                    gap: 15rem;
+
+                    .description__button {
+                        display: inline-flex;
+                        height: 50rem;
+                        padding: 25rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15rem;
+                        flex-shrink: 0;
+
+                        border-radius: 20rem;
+                        border: 1rem solid $light-grey;
+                        background: rgba(255, 255, 255, 0.90);
+
+                        &.active {
+                            border: 1rem solid $accent;
+                            background: $light-purple;
+
+                            .description__button-text {
+                                color: #000;
+                            }
+                        }
+
+                        &-text {
+                            color: $dark-grey;
+                            text-align: center;
+                            font-family: Montserrat;
+                            font-size: 15rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                    .photos__color {
+                        width: 60rem;
+                        height: 60rem;
+                    }
+
+                    .description__amount {
+                        display: inline-flex;
+                        height: 50rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15rem;
+                        flex-shrink: 0;
+
+                        .amount__less,
+                        .amount__more {
+                            border-radius: 20rem;
+                            border: 1rem solid $accent;
+                            width: 30rem;
+                            height: 30rem;
+                            padding: 5rem 5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &::before {
+                                color: $accent;
+                                text-align: right;
+                                font-family: Montserrat;
+                                font-size: 15rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+
+                        .amount__less {
+                            &::before {
+                                content: "-";
+                            }
+                        }
+
+                        .amount__more {
+                            &::before {
+                                content: "+";
+                            }
+                        }
+
+
+                        .amount__content {
+                            color: #000;
+                            text-align: center;
+                            font-family: Montserrat;
+                            font-size: 20rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                }
+
+                .item__price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .price__value {
+                        font-family: Montserrat;
+                        font-size: 36rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin: 0;
+
+                    }
+
+                    .price__discount {
+                        background: $gradient;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    .price__original {
+                        color: $dark-grey;
+                        font-family: Montserrat;
+                        font-size: 15rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-decoration: line-through;
+
+
+                    }
+                }
+
+                .product__button {
+                    width: 35%;
+                    height: 60rem;
+                    padding: 10rem 15rem;
+                    border-radius: 20rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &--add {
+                        background: $accent;
+                        border: none;
+                    }
+
+                    &--buy {
+                        background: none;
+                        border: 1px solid $accent;
+                    }
+                }
+
+                .product__text {
+                    font-family: Montserrat Alternates;
+                    font-size: 14rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &--add {
+                        color: #FFF;
+                    }
+
+                    &--buy {
+                        color: $accent;
+                    }
+                }
+
+                .parameters__vector {
+                    flex-shrink: 0;
+                    width: 30rem;
+                    height: 30rem;
+
+                    &-return {
+                        background: url("../images/return-benefits-icon.svg") center / 30rem 30rem no-repeat;
+                    }
+                }
+
+                .parameters__text {
+                    color: #000;
+                    font-weight: 400;
+                }
+
+                .item__social {
+                    width: 34rem;
+                    height: 34rem;
+                    border-width: 1rem;
+                    border-style: solid;
+                    flex-shrink: 0;
+                    border-radius: 50%;
+
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        width: 34rem;
+                        height: 34rem;
+                    }
+
+                    &--telegram {
+                        border-color: #0094FF;
+
+                        &::before {
+                            background: url("../images/telegram.svg") center left 7rem/18rem no-repeat;
+                        }
+                    }
+
+                    &--facebook {
+                        border-color: #3656FF;
+
+                        &::before {
+                            background: url("../images/facebook.svg") center/11rem no-repeat;
+                        }
+                    }
+
+                    &--twitter {
+                        border-color: #36CFFF;
+
+                        &::before {
+                            background: url("../images/twitter.svg") center/20rem no-repeat;
+                        }
+                    }
+                }
+
+
+
+
+
+
+            }
+        }
+    }
+}

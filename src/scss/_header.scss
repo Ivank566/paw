@@ -125,7 +125,7 @@
             justify-content: center;
             position: relative;
             z-index: 2;
-            width: 84%;
+            width: 95%;
 
             @include m.tablet {
                 flex-direction: column;
@@ -146,8 +146,16 @@
         text-decoration: none;
         color: #000;
 
+        &.active{
+            width: 100%;
+                border-bottom: 2rem solid $cat-color;
+                padding: 0rem 0rem 3rem 0rem;
+                align-items: center;
+        }
+
         &--cat{
             color: $cat-color;
+
         }
 
         &--dog{

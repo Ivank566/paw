@@ -77,3 +77,19 @@ p {
     }
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.pathway {
+    height: 41rem;
+
+    &__item {
+        color: #D1D1D1;
+    }
+
+    &__sub-item {
+        color: $dark-grey;
+    }
+}

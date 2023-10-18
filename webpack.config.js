@@ -15,7 +15,8 @@ module.exports = {
   context: path.resolve(__dirname, "src"),
   entry: {
     main: "./js/main.js",
-    catalog: "./js/catalog.js"
+    catalog: "./js/catalog.js",
+    product: "./js/product.js"
   },
   
   
@@ -57,6 +58,15 @@ module.exports = {
         collapseWhitespace: isProd,
       },
       chunks: ["catalog"],
+    }),
+
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, "src/product.html"),
+      filename: "product.html",
+      minify: {
+        collapseWhitespace: isProd,
+      },
+      chunks: ["product"],
     }),
 
     new MiniCssExtractPlugin({

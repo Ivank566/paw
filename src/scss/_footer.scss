@@ -2,13 +2,9 @@
 
 
 .footer {
-    width: 100%;
-    height: 436rem;
-    flex-shrink: 0;
-    background: $footer_bg;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
 
     @include m.mobile {
         height: 734rem;
@@ -16,21 +12,36 @@
     }
 
     &__wrapper {
-        width: 78%;
+        width: 100%;
+        height: 436rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        background: $footer_bg;
+       
 
         @include m.tablet {
-            width: 98%;
+            width: 100%;
+        }
+        @include m.mobile{
+            height: 727rem;
         }
     }
 
     &__container {
+        width: 61%;
         display: flex;
         flex-direction: column;
         gap: 50rem;
         height: 338rem;
 
+        @include m.tablet{
+            width: 96%;
+        }
+
         @include m.mobile {
-            width: 92%;
+            width: 91%;
             height: 720rem;
             justify-content: center;
             gap: 52rem;

@@ -1,10 +1,11 @@
 import '../scss/main.scss';
-import '../scss/_catalog.scss';
+import '../scss/catalog.scss';
 
 import '../catalog.html';
 
-
-
+import '../images/pagination-arrow-active.svg';
+import '../images/pagination-arrow-noactive.svg';
+import '../images/select-bg.svg';
 
 
 
@@ -15,30 +16,18 @@ headerBurger.addEventListener('click', function(){
 	menu.classList.toggle('active');
 })
 
-
+//Scroll
 let scrollpos = window.scrollY;
 
 const header = document.querySelector("header");
 const scrollChange = 20;
-
-
-const add_class_on_scroll = () => {
-  header.classList.remove("bg-white");
-};
-
-const remove_class_on_scroll = () => {
-  header.classList.add("bg-white"); 
-};
-
-add_class_on_scroll();
+const add_class_on_scroll = () => header.classList.add("bg-white");
+const remove_class_on_scroll = () => header.classList.remove("bg-white");
 
 window.addEventListener('scroll', function() { 
   scrollpos = window.scrollY;
 
-  if (scrollpos >= scrollChange) { 
-    remove_class_on_scroll();
-  }
-  else { 
-    add_class_on_scroll();
-  }
-});
+  if (scrollpos >= scrollChange) { add_class_on_scroll() }
+  else { remove_class_on_scroll() }
+  
+})
